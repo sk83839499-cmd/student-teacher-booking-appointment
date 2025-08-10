@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+   <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <h1>Admin Panel</h1>
+
+  <h3>Add Teacher</h3>
+  <input type="text" id="adminTeacherName" placeholder="Name" />
+  <input type="text" id="adminTeacherDept" placeholder="Department" />
+  <input type="text" id="adminTeacherSubject" placeholder="Subject" />
+  <input type="email" id="adminTeacherEmail" placeholder="Email" />
+  <button onclick="addTeacher()">Add Teacher</button>
+
+  <h3>All Teachers</h3>
+  <div id="teacherList"></div>
+ 
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

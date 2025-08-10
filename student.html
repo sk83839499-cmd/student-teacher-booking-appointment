@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Student Panel</h1>
+
+  <h3>Register</h3>
+  <input type="text" id="registerStudentName" placeholder="Name" />
+  <input type="email" id="registerStudentEmail" placeholder="Email" />
+  <button onclick="registerStudent()">Register</button>
+
+  <h3>Search Teacher</h3>
+  <input type="text" id="searchSubject" placeholder="Enter Subject" />
+  <button onclick="searchTeacher()">Search</button>
+  <div id="searchResults"></div>
+
+  <h3>Book Appointment</h3>
+  <input type="text" id="appointmentTeacherId" placeholder="Teacher ID" />
+  <input type="datetime-local" id="appointmentTime" />
+  <input type="text" id="appointmentStudentName" placeholder="Your Name" />
+  <input type="email" id="appointmentStudentEmail" placeholder="Your Email" />
+  <button onclick="bookAppointment()">Book</button>
+
+  <script type="module" src="student.js"></script>
+</body>
+</html>
